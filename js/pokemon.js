@@ -1,7 +1,5 @@
 var pokemonsList = document.querySelector('.pokemons-list');
-
 var pokemonsItemTemplate = document.querySelector('#pokemons-item-template').content;
-var pokemons = pokemons;
 
 var pokemonsListFragment = document.createDocumentFragment();
 
