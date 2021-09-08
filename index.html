@@ -39,12 +39,12 @@
           </div>
 
           <div class="mb-3">
-            <input class="form-control js-new-contact-phone-input" type="tel" name="phone" placeholder="Phone" aria-label="Phone" pattern="^[0-9\-\+]{9,15}$" required>
-            <span class="isNumberExist text-danger d-none">Bu raqam mavjud!</span>
+            <input class="form-control js-new-contact-phone-input" type="tel" name="phone" pattern="[+998][0-9]{12}" placeholder="Phone" aria-label="Phone" required>
+            <div class="invalid-feedback">
+              Please select a valid state.
+            </div>
           </div>
 
-          <!-- Relationship -->
-          <!-- Telefon -->
           <button class="btn btn-primary">Add contact</button>
         </form>
       </section>
@@ -53,39 +53,22 @@
         <h2 class="mb-3">Contacts</h2>
 
         <ul class="contacts__list list-group">
-          <!-- <li class="list-group-item p-3">
-            <h3 class="h5">Falonchi Pismadonchiyev</h3>
-            <div class="mb-2">Lorem, ipsum dolor.</div>
-            <a class="btn btn-outline-success btn-sm" href="tel:+998909213711">+998 90 921 37 11</a>
-          </li> -->
         </ul>
       </section>
     </div>
-    <a class="text-danger" href="pokemons.html">Pokemons</a>
-
   </div>
-
-  <div class="container">
-    <div class="movies row">
-
-    </div>
-  </div>
-
-
-  <!-- <template id="movies">
-        <div class="body-card movie col-md-6 mb-4">
-          <div class="card">
-            <div class="body-card card-body">
-              <div class="d-flex align-items-center mb-2">
-                <h3 class="movie-title card-title h5 mb-0 me-2"></h3>
-                <span class="movie-year badge bg-info"></span>
-              </div>
-              <div class="mb-1">Genre: <span class="movie-genre"></span></div>
-              <div class="mb-1">Cast: <span class="movie-cast"></span></div>
-            </div>
-          </div>
+  <template id="contacts-template">
+    <li class="contacts__item list-group-item p-3 shadow-sm border-0 mb-3">
+      <h3 class="contact-title h5"></h3>
+      <div class="contact-relationship mb-2"></div>
+      <div class="d-flex align-items-center justify-content-between">
+        <a class="contact-phone btn btn-outline-success btn-sm me-3" href=""></a>
+        <button class="contact-btn btn btn-danger btn-sm text-white" type="button">Delete</button>
       </div>
-  </template> -->
+    </li>
+  </template>
+
+  <a class="text-danger d-none" href="pokemons.html">Pokemons</a>
 
   <script src="js/bootstrap5.bundle.min.js"></script>
   <script src="js/kinolar.js"></script>
